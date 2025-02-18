@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(26, 25, 25);
+}
+
+.main {
+    background-image: url("emile-perron-xrVDYZRGdw4-unsplash.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);/* Fix for background size */
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /* Adjusted for smaller spacing */
+    align-items: center;
+    justify-content: space-between;/* Center content */
+    position: relative;
+    z-index: 1;
+    padding-left: 30px;
+    max-width: 90vw;
+    height: 80px;
+}
+
+.name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    position: relative;
+    color: white;
+    z-index: 1;
+    margin-top: 6px;
+    margin-right: 30px;
+}
+
+.data {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    font-size: 20px;
+
+}
+
+.data a {
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 5px 30px;
+    transition: background-color 0.3s ease;
+    gap: 50px;
+}
+
+.data a:hover {
+    background-color: black;
+}
+
+.box {
+    opacity: 0.69;
+    background-color: black;
+    height: 644px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 6px;
+}
+.design{
+    color:white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 0 30px;
+    height: calc(100% - 100px);
+    font-size: 3em;
+    margin-left: 150px;
+    font-family: "Montserrat", serif;
+}
+  .seperator{
+    height: 8px;
+    background-color: rgb(68, 68, 68);
+  }
+  .buttons{
+    margin-top: 20px;
+    margin-left: 200px;
+  }
+  .b{
+    margin: 10px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  .b1{
+    background-color: rgb(185, 37, 37);
+  }
+  .b2{
+    background-color: rgb(150, 149, 149);
+  }
+  .b1:hover{
+    background-color: rgb(168, 28, 28);
+  }
+  .b1:hover{
+    background-color: rgb(168, 28, 28);
+  }
+  .b2:hover:hover{
+    background-color: rgb(75, 74, 74);
+  }
+.head{
+    color: white;
+    font-size: 45px;
+    margin-top: 80px;
+    margin-left:50px;
+}
+.about{
+display: flex;
+flex-direction: row;
+gap: 100px;
+}
+.about img{
+    float: right;
+    width:350px;
+    height:400px;
+    margin-right: 30px;
+    
+}
+.me{
+    margin-top: 60px;
+    max-width: 65vw;
+    font-size: 25px;
+    margin-left: 50px;
+    color:white;
+    border: 2px solid white;
+    padding: 10px ;
+    height: 250px;
+}
+.s11{
+    margin-top: 50px;
+}
+.sec{
+    color: white;
+    font-size: 35px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
