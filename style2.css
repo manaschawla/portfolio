@@ -92,6 +92,8 @@ body {
     font-size: 3em;
     margin-left: 150px;
     font-family: "Montserrat", serif;
+    opacity: 0;
+    animation: showtext 0.5s 1s linear forwards;
 }
   .seperator{
     height: 8px;
@@ -299,11 +301,11 @@ margin-top: 5px;
   background-color: rgb(241, 15, 15);
 }
 .b-css{
-  width: 70%;
+width: 80%;
   background-color: rgb(238, 241, 11);
 }
 .b-python{
-width: 65%;
+  width: 65%;
 background-color: rgb(5, 224, 16);
 }
 .b-c{
@@ -318,6 +320,57 @@ background-color: rgb(241, 11, 126) ;
   width: 50%;
   background-color: rgb(42, 2, 80);
 }
+.skill-set span::after{
+  position: absolute;
+  padding: 1px 8px;
+  background-color: rgb(240, 236, 236);
+  color: rgb(34, 33, 33);
+  font-size: 12px;
+  border-radius: 3px;
+  top: -20px;
+  right: -30px;
+  animation: showtext 0.5s 1s linear forwards;
+  opacity: 0;
+}
+
+.skill-set span::before{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: rgb(89, 92, 92);
+  top: -10px;
+  right: 0;
+  animation: showtext 0.5s 1s linear forwards;
+}
+@keyframes showtext {
+  100%{
+    opacity: 1;
+  }
+}
+
+.b-html::after{
+content: "90%"; 
+}
+.b-css::after{
+
+  content: "80%"; 
+}
+.b-python::after{
+  content: "65%"; ;
+}
+.b-c::after{
+  content: "60%"; 
+}
+.b-js::after{
+  content: "60%"; 
+}
+.b-node::after{
+  content: "60%"; 
+}
 
 .h2{
   text-align: center;
@@ -328,6 +381,112 @@ background-color: rgb(241, 11, 126) ;
 .educations{
   color: white;
   padding: 34px;
+}
+.fourth{
+  height: 70vh;
+}
+.softskill{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 0px;
+}
+.rad-bar{
+  width: 25%;
+  height: 170px;
+  position: relative;
+}
+.rad-bar svg{
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  width: 170px;
+  height: 160px;
+  transform: translate(-50% , -50%) rotate(-90deg);
+}
+
+.progress-bar{
+  stroke-width: 10;
+  stroke: black;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+  100%{
+    stroke-dashoffset: -1;
+  }
+}
+.path{
+  stroke-width: 15;
+  stroke: aqua;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.p1{
+  animation: animate-p1 1s 1s linear forwards;
+  stroke: rgb(248, 67, 158) ;
+}
+
+.p2{
+  animation: animate-p2 1s 1s linear forwards;
+  stroke: aquamarine;
+}
+.p3{
+  animation: animate-p3 1s 1s linear forwards;
+  stroke: rgb(252, 252, 108);
+}
+.p4{
+  animation: animate-p4 1s 1s linear forwards;
+  stroke: beige;
+}
+@keyframes animate-p1 {
+  100%{
+    stroke-dashoffset: 60;
+  }
+}
+@keyframes animate-p2 {
+  100%{
+    stroke-dashoffset: 90;
+  }
+}
+
+@keyframes animate-p3 {
+  100%{
+    stroke-dashoffset: 120;
+  }
+}
+
+@keyframes animate-p4 {
+  100%{
+    stroke-dashoffset: 150;
+  }
+}
+.percentage{
+  position: absolute;
+  top: 59%;
+  left: 31%;
+  transform: translate(-50%, -50%);
+  font-size: 27px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  animation: showtext 0.5s 1s linear forwards;
+}
+.text{
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  left: 35%;
+  text-align: center;
+  bottom: -35px;
 }
 .education{
   display: flex;
